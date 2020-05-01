@@ -3,7 +3,6 @@ package com.example.freemoviesapp.ui.login;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,6 +22,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.freemoviesapp.R;
+import com.example.freemoviesapp.data.ui.ForgotPasswordActivity;
+import com.example.freemoviesapp.data.ui.MainActivity;
+import com.example.freemoviesapp.data.ui.RegisterActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -54,36 +56,6 @@ public class LoginActivity extends AppCompatActivity {
 
                 loginButton.setEnabled(loginFormState.isDataValid());
 
-                loginButton.setOnClickListener(new View.OnClickListener() {
-                    @SuppressLint("SetTextI18n")
-                    @Override
-                    public void onClick(View v) {
-                        if (usernameText.getText().toString().equals("admin") &&
-                                passwordText.getText().toString().equals("admin")) {
-                            Toast.makeText(getApplicationContext(),
-                                    "Redirecting...", Toast.LENGTH_SHORT).show();
-
-                            final Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
-                            startActivity(mainIntent);
-                            finish();
-                        }
-
-                        else {
-                            Toast.makeText(getApplicationContext(),
-                                    "Wrong Credentials", Toast.LENGTH_SHORT).show();
-
-                            displayMessage.setVisibility(View.VISIBLE);
-                            // displayMessage.setBackgroundColor(Color.RED);
-                            counter--;
-                            displayMessage.setText("Intents Left: " + counter);
-
-                            if (counter == 0) {
-                                loginButton.setEnabled(false);
-                            }
-                        }
-                    }
-                });
-
                 if (loginFormState.getUsernameError() != null) {
                     usernameText.setError(getString(loginFormState.getUsernameError()));
                 }
@@ -111,16 +83,41 @@ public class LoginActivity extends AppCompatActivity {
 
                 //Complete and destroy login activity once successful
                 loginButton.setOnClickListener(new View.OnClickListener() {
+                    @SuppressLint("SetTextI18n")
                     @Override
                     public void onClick(View v) {
+
                         loadingProgressBar.setVisibility(View.VISIBLE);
-                        loginViewModel.login(usernameText.getText().toString(),
-                                passwordText.getText().toString());
-                        final Intent mainIntent = new Intent(LoginActivity.this, RegisterActivity.class);
-                        startActivity(mainIntent);
+//                        loginViewModel.login(usernameText.getText().toString(),
+//                                passwordText.getText().toString());
+
+                        if (usernameText.getText().toString().equals("admin1") &&
+                                passwordText.getText().toString().equals("admin1")) {
+                            Toast.makeText(getApplicationContext(),
+                                    "Redirecting...", Toast.LENGTH_SHORT).show();
+
+                            final Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                            startActivity(mainIntent);
+                            finish();
+                        }
+
+                        else {
+                            Toast.makeText(getApplicationContext(),
+                                    "Wrong Credentials", Toast.LENGTH_SHORT).show();
+
+                            displayMessage.setVisibility(View.VISIBLE);
+                            // displayMessage.setBackgroundColor(Color.RED);
+                            counter--;
+                            displayMessage.setText("Intents Left: " + counter);
+
+                            if (counter == 0) {
+                                loginButton.setEnabled(false);
+                            }
+                        }
+
                     }
                 });
-                finish();
+
             }
         });
 
@@ -176,7 +173,7 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void updateUiWithUser(LoggedInUserView model) {
+    private void updateUiWithUser(MainActivity model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();

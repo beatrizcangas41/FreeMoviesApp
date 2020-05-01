@@ -1,4 +1,4 @@
-package com.example.freemoviesapp.ui.login;
+package com.example.freemoviesapp.data.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.freemoviesapp.R;
+import com.example.freemoviesapp.ui.login.LoginActivity;
 
 public class WelcomePage extends AppCompatActivity {
 

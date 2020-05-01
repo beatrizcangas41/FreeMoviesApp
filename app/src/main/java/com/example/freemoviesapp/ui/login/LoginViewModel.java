@@ -6,8 +6,8 @@ import androidx.lifecycle.ViewModel;
 
 import android.util.Patterns;
 
-import com.example.freemoviesapp.data.LoginRepository;
-import com.example.freemoviesapp.data.Result;
+import com.example.freemoviesapp.data.ui.MainActivity;
+import com.example.freemoviesapp.data.ui.Result;
 import com.example.freemoviesapp.data.model.LoggedInUser;
 import com.example.freemoviesapp.R;
 
@@ -35,13 +35,13 @@ public class LoginViewModel extends ViewModel {
 
         if (result instanceof Result.Success) {
             LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
-            loginResult.setValue(new LoginResult(new LoggedInUserView(data.getDisplayName())));
+            loginResult.setValue(new LoginResult(new MainActivity(data.getDisplayName())));
         } else {
             loginResult.setValue(new LoginResult(R.string.login_failed));
         }
     }
 
-    public void loginDataChanged(String username, String password) {
+    void loginDataChanged(String username, String password) {
         if (!isUserNameValid(username)) {
             loginFormState.setValue(new LoginFormState(R.string.invalid_username, null));
         } else if (!isPasswordValid(password)) {

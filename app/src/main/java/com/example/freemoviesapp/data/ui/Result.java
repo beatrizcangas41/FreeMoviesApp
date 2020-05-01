@@ -1,4 +1,4 @@
-package com.example.freemoviesapp.data;
+package com.example.freemoviesapp.data.ui;
 
 /**
  * A generic class that holds a result success w/ data or an error exception.

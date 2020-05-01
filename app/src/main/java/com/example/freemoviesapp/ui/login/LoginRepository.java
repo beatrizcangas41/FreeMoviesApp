@@ -1,5 +1,6 @@
-package com.example.freemoviesapp.data;
+package com.example.freemoviesapp.ui.login;
 
+import com.example.freemoviesapp.data.ui.Result;
 import com.example.freemoviesapp.data.model.LoggedInUser;
 
 /**

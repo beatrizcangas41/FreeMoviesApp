@@ -1,11 +1,8 @@
-package com.example.freemoviesapp.data;
+package com.example.freemoviesapp.ui.login;
 
-import android.provider.ContactsContract;
-import android.widget.TextView;
-
+import com.example.freemoviesapp.data.ui.Result;
 import com.example.freemoviesapp.data.model.LoggedInUser;
 import java.io.IOException;
-import java.util.logging.XMLFormatter;
 
 /**
  * Class that handles authentication w/ login credentials and retrieves user information.
