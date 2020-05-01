@@ -128,7 +128,32 @@ public class UserDBHandler {
         return username.equals(uName);
     }
 
-    public static boolean verifyLoginCredentials (String username, String password) throws SQLException {
+    public static boolean verifyUsername(String username) throws SQLException {
+
+        String query1 = "SELECT * FROM user WHERE username = '" + username + "'";
+        PreparedStatement pstmt = connection.prepareStatement(query1);
+        ResultSet results = pstmt.executeQuery(query1);
+
+        String dbUsername = null;
+        while (results.next()) {
+            dbUsername = results.getString("username");
+            System.out.println("db pw: " + dbUsername);
+            System.out.println("pw entered: " + username);
+        }
+
+        if (username != null && username.equals(dbUsername)) {
+            System.out.println("It matches");
+            return true;
+        }
+        
+        else {
+            System.out.println("It does not match");
+            return false;
+        }
+
+    }
+
+    public static boolean verifyPassword(String username, String password) throws SQLException {
 
         String query1 = "SELECT * FROM user WHERE username = '" + username + "'";
         PreparedStatement pstmt = connection.prepareStatement(query1);
@@ -147,7 +172,9 @@ public class UserDBHandler {
         if (password != null && dbPassword != null && BCrypt.checkpw(password, dbPassword)) {
             System.out.println("It matches");
             return true;
-        } else {
+        }
+
+        else {
             System.out.println("It does not match");
             System.out.println("db pw: " + dbPassword);
             System.out.println("pw entered: " + password);
