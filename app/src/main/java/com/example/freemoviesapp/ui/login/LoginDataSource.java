@@ -1,7 +1,5 @@
 package com.example.freemoviesapp.ui.login;
 
-import com.example.freemoviesapp.data.ui.Result;
-import com.example.freemoviesapp.data.model.LoggedInUser;
 import java.io.IOException;
 
 /**
@@ -9,12 +7,15 @@ import java.io.IOException;
  */
 public class LoginDataSource {
 
-    public Result.Error login(String username, String password) {
+    public Result<LoggedInUser> login(String username, String password) {
 
         try {
             // TODO: handle loggedInUser authentication
-            LoggedInUser fakeUser = new LoggedInUser( java.util.UUID.randomUUID().toString(), "Jane Doe");
-            return new Result.Error(fakeUser);
+            LoggedInUser fakeUser =
+                    new LoggedInUser(
+                            java.util.UUID.randomUUID().toString(),
+                            "Jane Doe");
+            return new Result.Success<>(fakeUser);
         }
 
         catch (Exception e) {
