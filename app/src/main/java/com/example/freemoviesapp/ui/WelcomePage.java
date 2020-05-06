@@ -15,13 +15,11 @@ public class WelcomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading_page);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                final Intent mainIntent = new Intent(WelcomePage.this, MainActivity.class);
-                startActivity(mainIntent);
-                finish();
-            }
+
+        new Handler().postDelayed(() -> {
+            final Intent mainIntent = new Intent(WelcomePage.this, MainActivity.class);
+            startActivity(mainIntent);
+            finish();
         }, 3000);
     }
 }
