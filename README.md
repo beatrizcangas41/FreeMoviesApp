@@ -26,3 +26,5 @@ The ViewModel class allows data to survive configuration changes such as screen 
     <t> <img src= "https://lh4.googleusercontent.com/C9WQx5NmlvgeiyVXQobvZ8BV7OHu3iIQ1YQhPKO580oVPOh2ILXXSGS3_gxtVU_zZ9tA_BzXodYxcviTBT_iNCK9E5io1fEn2jRWU7VP" raw=true"</img>
     <t> <img src="https://lh5.googleusercontent.com/oXCVQMZPvEf-Qt0Jh3vdCBsaMjHfiPg6TH1M-WHb0tVBR4GTlkGG1bNAn6mtx2YxhcLS6eZBP9ReXK5WW6rgtmZEkLpe_zAWjnsQRy3G" raw=true"</img> 
 </div>
+
+The main and only contributor at the moment for this project is Beatriz Cangas - Perez
