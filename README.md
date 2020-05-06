@@ -26,3 +26,16 @@ The ViewModel class allows data to survive configuration changes such as screen 
 7- Android architecture components are a collection of libraries that help you design robust, testable, and maintainable apps. Start with classes for managing your UI component lifecycle and handling data persistence.
 
 8- Welcoming page
+
+<div align="center">
+    <img src="https://lh4.googleusercontent.com/ALlfPZ6nu4v7QVXCcsk32DJGmd7he2aROGj0vcnvlaTsqbCZzS7mhUCPRwmwBMVazmyZedC7lUZhJU0lHLOMsA-vO6CCO1vpjuhuyFEL" raw=true"</img> 
+    <tb>
+</div>
+
+<div align="center">
+    <img src= "https://lh4.googleusercontent.com/C9WQx5NmlvgeiyVXQobvZ8BV7OHu3iIQ1YQhPKO580oVPOh2ILXXSGS3_gxtVU_zZ9tA_BzXodYxcviTBT_iNCK9E5io1fEn2jRWU7VP" raw=true"</img> 
+</div>
+
+<div align="center">
+    <img src="https://lh5.googleusercontent.com/oXCVQMZPvEf-Qt0Jh3vdCBsaMjHfiPg6TH1M-WHb0tVBR4GTlkGG1bNAn6mtx2YxhcLS6eZBP9ReXK5WW6rgtmZEkLpe_zAWjnsQRy3G" raw=true"</img> 
+</div>
