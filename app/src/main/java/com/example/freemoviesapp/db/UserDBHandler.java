@@ -1,6 +1,7 @@
-package com.example.freemoviesapp.data.db;
+package com.example.freemoviesapp.db;
 
-import com.example.freemoviesapp.data.model.User;
+import com.example.freemoviesapp.model.User;
+
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.Connection;
@@ -10,10 +11,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import static com.example.freemoviesapp.data.util.JavaMail.getToken;
+import static com.example.freemoviesapp.util.JavaMail.getToken;
 
 public class UserDBHandler {
+
     private static Connection connection = DatabaseConnector.getConnection();
+
 
     public static User getUserByUsername(String username) throws SQLException{
         String query1 = "SELECT * FROM user WHERE username = '" + username + "'";

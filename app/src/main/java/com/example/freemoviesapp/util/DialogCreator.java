@@ -1,4 +1,4 @@
-package com.example.freemoviesapp.data.util;
+package com.example.freemoviesapp.util;
 
 import android.app.AlertDialog;
 import android.content.Context;

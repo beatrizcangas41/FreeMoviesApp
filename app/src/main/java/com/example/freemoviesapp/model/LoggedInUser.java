@@ -1,4 +1,4 @@
-package com.example.freemoviesapp.data.model;
+package com.example.freemoviesapp.model;
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

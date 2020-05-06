@@ -1,4 +1,4 @@
-package com.example.freemoviesapp.data.util;
+package com.example.freemoviesapp.util;
 
 import java.util.Properties;
 import java.util.UUID;

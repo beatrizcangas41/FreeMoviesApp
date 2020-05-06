@@ -1,4 +1,4 @@
-package com.example.freemoviesapp.data.model;
+package com.example.freemoviesapp.model;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

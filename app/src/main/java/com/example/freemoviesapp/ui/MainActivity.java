@@ -1,4 +1,4 @@
-package com.example.freemoviesapp.data.ui;
+package com.example.freemoviesapp.ui;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
