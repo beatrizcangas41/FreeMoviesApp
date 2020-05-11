@@ -22,7 +22,7 @@ The ViewModel class allows data to survive configuration changes such as screen 
 8- Welcoming page
 
 <div align="center">
-    <t> <img src= "<img src="https://photos.app.goo.gl/wW95fWe6Dzy3AHC96"</img> 
+    <t> <img src= "<img src="https://lh3.googleusercontent.com/VqRYNfCt7domdtCHpw8-FfdsCVzmG3Y55FrP3HCo796Pyj7NjrTHtIm6LKPxjOPS7c5FlSGNnzN_FaFH2iq1HsmhLw6HT9qaO95VotWOvUL013ku9-j3f8GYQ7nEzuPrA2p0pxLz1uN_dQRGdA4BZlF1Cd9X82XzyAXKH9lLUYnYluZvwyxd6--Gw6iTBUAhOAk8KYDnJdj1Cy_v8KJ8aiLlrQZpGYUmGcPUfwlCk_cI_g8WiaN7wb7n0EoKmZ2Ds53HQJRuV4wK2Kk0NMcYXD1wfiBHtL7dxf-RhXhhB42mA9I2BX1yFvKzXTDI5CDteaQ4HFRx6oeuoriPcmmSdrIvDXfq8GI67AZnLlozWwUKwnRHKeShcOxK8V1l2tNd1tKoSslNWmZx-sEd4xhx5sJRddM61iqCh1irKlXSeUTXF1f4GJjcd6BNmMoY4fmeksqMPnMYFgmvJRrkeRh2mQrTlPsiXXd9EedGleWeLbEadxpIkx0arHifkAjRUMOOQp-sWkB9GG64-Gr1gpe-2A48inr5taNMsqzDfSNSwUj6OnPS-xShmfXW_YZ8uhcVk0jbBIMttYBJ3vgU7w--Hg7xxcXayRMCE9eZviJ5vei37NTdsGyC4Od_IUOEVNDMJb1cL6YN1sKZJLuFAzDveRyZH9IHnSMjDS-pUa36J0LodQuvVktXMz8uNBXz4vA=w922-h613-no?authuser=0"</img> 
 </div>
 
 <video width="320" height="240" controls>
