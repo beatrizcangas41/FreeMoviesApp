@@ -22,7 +22,7 @@ The ViewModel class allows data to survive configuration changes such as screen 
 8- Welcoming page
 
 <div align="center">
-    <t> <img src= "https://drive.google.com/open?id=1zdUqBGWnMsaYYjcN252oF8Mtw9ArAl6C"</img> 
+    <t> <img src= "https://drive.google.com/open?id=1BZaB3bpRxg1ZvPRyPXN4-le0VtGMfgIs"</img> 
 </div>
 
 <video width="320" height="240" controls>
