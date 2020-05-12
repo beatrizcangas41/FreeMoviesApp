@@ -22,7 +22,7 @@ The ViewModel class allows data to survive configuration changes such as screen 
 8- Welcoming page
 
 <div align="center">
-    <img src="C:\Users\Beatriz\AndroidStudioProjects\HW6\FreeMoviesApp2\app\src\main\res\mipmap-xxhdpi\free_movies.png" raw=true"</img>
+    <img src="https://github.com/beatrizcangas41/FreeMoviesApp/blob/master/app/src/main/res/mipmap-mdpi/final%20project.JPG?raw=true" raw=true> </img>
     </div>
 
 The main and only contributor at the moment for this project is Beatriz Cangas - Perez
