@@ -1,9 +1,7 @@
 package com.example.freemoviesapp.binding_adatpers;
 
 import android.widget.ImageView;
-
 import androidx.databinding.BindingAdapter;
-
 import com.bumptech.glide.Glide;
 import com.example.freemoviesapp.util.Constant;
 
