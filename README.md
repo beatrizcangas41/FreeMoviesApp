@@ -23,6 +23,6 @@ The ViewModel class allows data to survive configuration changes such as screen 
 
 <div align="center">
     <img src="https://github.com/beatrizcangas41/FreeMoviesApp/blob/master/app/src/main/res/mipmap-mdpi/final%20project.JPG?raw=true" raw=true> </img>
-    </div>
+</div>
 
 The main and only contributor at the moment for this project is Beatriz Cangas - Perez
